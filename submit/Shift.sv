@@ -23,7 +23,7 @@ module Shift (
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            state_reg <= INIT_HOLD;
+            state_reg <= TDATA;
             out_valid <= 1'b0;
             in_ready <= 1'b0;
         end else begin
@@ -44,7 +44,7 @@ module Shift (
                 end
             end
             TDATA:begin
-                if (out_ready) begin
+                if (out_ready && in_valid) begin
                     state_reg <= RDATA;
                     in_ready <= 1'b1;
                     //out_valid <= 1'b1;
@@ -53,13 +53,13 @@ module Shift (
                     state_reg <= TDATA;
                 end
             end
-            INIT_HOLD:begin
-                if (out_ready) begin
+            /*INIT_HOLD:begin
+                if (out_ready && in_valid) begin
                     state_reg <= TDATA;
                 end else begin
                     state_reg <= INIT_HOLD;
                 end
-            end
+            end*/
             default:
                 state_reg <= TDATA;
             endcase

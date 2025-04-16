@@ -1234,7 +1234,7 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__fsm_state_reg = 0U;
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__2__KET____DOT__mul__DOT__fsm_state_reg = 0U;
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__fsm_state_reg = 0U;
-        __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 2U;
+        __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
         __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0U;
         vlSelfRef.Testbench__DOT__in_ready = 0U;
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg = 0U;
@@ -1312,7 +1312,8 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
                 __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0U;
             }
         } else if ((1U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg))) {
-            if (vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready) {
+            if (((IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready) 
+                 & (IData)(vlSelfRef.Testbench__DOT__in_valid))) {
                 __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 0U;
                 vlSelfRef.Testbench__DOT__in_ready = 1U;
                 __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 1U;
@@ -1320,10 +1321,7 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
                 __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
             }
         } else {
-            __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg 
-                = ((2U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg))
-                    ? ((IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready)
-                        ? 1U : 2U) : 1U);
+            __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
         }
         if ((0U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg))) {
             if (vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_valid) {
