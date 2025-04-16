@@ -320,7 +320,7 @@ VL_ATTR_COLD void VTestbench___024root___ctor_var_reset(VTestbench___024root* vl
     }
     vlSelf->Testbench__DOT__conv_unit__DOT__temp_valid = VL_RAND_RESET_I(1);
     vlSelf->Testbench__DOT__conv_unit__DOT__temp_ready = VL_RAND_RESET_I(1);
-    vlSelf->Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = VL_RAND_RESET_I(1);
+    vlSelf->Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = VL_RAND_RESET_I(2);
     for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         vlSelf->Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg[__Vi0] = VL_RAND_RESET_Q(64);
     }

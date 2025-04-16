@@ -83,7 +83,7 @@ module Testbench;
         always@(negedge clk)begin
             if(error)begin
                 $display("fail!!!");
-                //$finish;
+                $finish;
             end
         end
     `endif

@@ -11,7 +11,7 @@ module Shift (
     input out_ready
 );
 
-    typedef enum logic {RDATA, TDATA} fsm_state;
+    typedef enum logic [1:0] {RDATA, TDATA, INIT_HOLD} fsm_state;
     fsm_state state_reg;
     Conv::data_t data_reg [Conv::LEN-1:0];
 
@@ -23,7 +23,7 @@ module Shift (
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            state_reg <= TDATA;
+            state_reg <= INIT_HOLD;
             out_valid <= 1'b0;
             in_ready <= 1'b0;
         end else begin
@@ -34,6 +34,7 @@ module Shift (
                         data.data[i]<=data.data[i+1];
                     end
                     data.data[Conv::LEN-1]<=in_data;
+                    //out_valid <= 1'b0;
                     out_valid <= 1'b0;
                     in_ready <= 1'b0;
                     state_reg <= TDATA;
@@ -46,10 +47,17 @@ module Shift (
                 if (out_ready) begin
                     state_reg <= RDATA;
                     in_ready <= 1'b1;
+                    //out_valid <= 1'b1;
                     out_valid <= 1'b1;
                 end else begin
                     state_reg <= TDATA;
-                    
+                end
+            end
+            INIT_HOLD:begin
+                if (out_ready) begin
+                    state_reg <= TDATA;
+                end else begin
+                    state_reg <= INIT_HOLD;
                 end
             end
             default:
