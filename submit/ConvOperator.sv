@@ -38,8 +38,8 @@ module ConvOperator(
     Conv::data_vector temp_ker;
     Conv::data_vector temp_dat;
 
-    Conv::result_t temp_result [Conv::LEN-1:0];
-    logic temp_finish [Conv::LEN-1:0];
+    Conv::result_t temp_result [Conv::LEN:0];
+    logic temp_finish [Conv::LEN:0];
     
     genvar i;
     generate
@@ -49,11 +49,11 @@ module ConvOperator(
             ) mul (
                 .clk(clk),
                 .rst(rst),
-                .multiplicand(temp_ker[i]),
-                .multiplier(temp_dat[i]),
+                .multiplicand(kernel.data[i]),
+                .multiplier(data.data[i]),
                 .start(mul_start),
-                .product(temp_result[i]),
-                .finish(temp_finish[i])
+                .product(vector_stage1[i].data),
+                .finish(vector_stage1[i].valid)
             );
         end
     endgenerate
@@ -65,10 +65,10 @@ module ConvOperator(
             out_valid <= 1'b0;
             for (integer j=0;j<Conv::LEN-1;j++) begin
                 vector_stage1[j].valid <= 1'b0;
-                vector_stage1[j].data <= 128'b0;
+                //vector_stage1[j].data <= 128'b0;
             end
             vector_stage2.valid <= 1'b0;
-            vector_stage2.data <= 128'b0;
+            //vector_stage2.data <= 128'b0;
         end else begin
             case(state_reg) 
                 RDATA: begin
@@ -80,6 +80,7 @@ module ConvOperator(
                             vector_stage1[m].valid <= 1'b0;
                             vector_stage1[m].data <= 128'b0;
                         end
+                        mul_start <= 1'b1;
                         vector_stage2.valid <= 1'b0;
                         vector_stage2.data <= 128'b0;
                         state_reg <= WORK;
@@ -91,15 +92,15 @@ module ConvOperator(
                     end
                 end
                 WORK: begin
-                    if (temp_finish[0]) begin
+                    if (vector_stage1[0].valid) begin
                         vector_stage2.valid <= 1'b1;
-                        vector_stage2.data <= add128(temp_result[0],temp_result[1],temp_result[2],temp_result[3]);
+                        vector_stage2.data <= add128(vector_stage1[0].data, vector_stage1[1].data, vector_stage1[2].data, vector_stage1[3].data);
                         state_reg <= TDATA;
                         out_valid <= 1'b1;
                         in_ready <= 1'b0;
                         mul_start <= 1'b0;
                     end else begin
-                        mul_start <= 1'b1;
+                        mul_start <= 1'b0;
                         out_valid <= 1'b0;
                         in_ready <= 1'b0;
                         state_reg <= WORK;

@@ -95,11 +95,15 @@ class alignas(VL_CACHE_LINE_BYTES) VTestbench___024root final : public Verilated
     QData/*63:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__2__KET____DOT__mul__DOT__multiplicand_reg;
     QData/*63:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__multiplicand_reg;
     VlUnpacked<QData/*63:0*/, 4> Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg;
+    VlUnpacked<VlWide<4>/*127:0*/, 5> Testbench__DOT__conv_unit__DOT__conv__DOT__temp_result;
+    VlUnpacked<CData/*0:0*/, 5> Testbench__DOT__conv_unit__DOT__conv__DOT__temp_finish;
     VlUnpacked<VlWide<4>/*127:0*/, 4> Testbench__DOT__judge__DOT__mid;
     VlUnpacked<CData/*0:0*/, 6> __Vm_traceActivity;
     VTestbench_data_vector__struct__0 Testbench__DOT__kernel;
     VTestbench_data_vector__struct__0 Testbench__DOT__conv_unit__DOT__shifted_data;
     VTestbench_Testbench__DOT__conv_unit__DOT__conv__DOT__mid_vector__struct__0 Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2;
+    VTestbench_data_vector__struct__0 Testbench__DOT__conv_unit__DOT__conv__DOT__temp_ker;
+    VTestbench_data_vector__struct__0 Testbench__DOT__conv_unit__DOT__conv__DOT__temp_dat;
     VlQueue<VlWide<4>/*127:0*/> Testbench__DOT__judge__DOT__resultQueue;
     VlQueue<QData/*63:0*/> Testbench__DOT__judge__DOT__dataQueue;
     VlDelayScheduler __VdlySched;
