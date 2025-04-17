@@ -32,14 +32,6 @@ module ConvOperator(
             add128 = a + b + c + d;
         end
     endfunction
-
-    //assign sum = add128(vector_stage1[0].data, vector_stage1[1].data, vector_stage1[2].data, vector_stage1[3].data);
-
-    Conv::data_vector temp_ker;
-    Conv::data_vector temp_dat;
-
-    Conv::result_t temp_result [Conv::LEN:0];
-    logic temp_finish [Conv::LEN:0];
     
     genvar i;
     generate
