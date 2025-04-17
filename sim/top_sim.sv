@@ -15,14 +15,15 @@ module top_sim;
     #20;
     for(i=0;i<16;i=i+1)begin
         next_test=1'b1;
-        #10;
+        //#10;
+        #100;
         next_test=1'b0;
         #800;
     end
   end
   
   always begin
-    #5
+    #5;
     clk=~clk;
   end
 

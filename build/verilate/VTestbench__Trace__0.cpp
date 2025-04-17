@@ -195,7 +195,7 @@ void VTestbench___024root__trace_chg_0_sub_0(VTestbench___024root* vlSelf, Veril
         bufp->chgCData(oldp+120,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__fsm_state_reg),2);
         bufp->chgIData(oldp+121,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j),32);
         bufp->chgIData(oldp+122,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk2__DOT__m),32);
-        bufp->chgCData(oldp+123,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg),2);
+        bufp->chgBit(oldp+123,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg));
         bufp->chgIData(oldp+124,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__i),32);
     }
     if (VL_UNLIKELY(((vlSelfRef.__Vm_traceActivity[4U] 

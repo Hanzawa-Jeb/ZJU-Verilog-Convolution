@@ -246,12 +246,7 @@ VL_ATTR_COLD void VTestbench___024root__trace_init_sub__TOP__0(VTestbench___024r
     tracep->popPrefix();
     tracep->declBit(c+105,0,"out_valid",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+106,0,"out_ready",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+124,0,"state_reg",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
-    tracep->pushPrefix("data_reg", VerilatedTracePrefixType::ARRAY_UNPACKED);
-    for (int i = 0; i < 4; ++i) {
-        tracep->declQuad(c+197+i*2,0,"",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, true,(i+0), 63,0);
-    }
-    tracep->popPrefix();
+    tracep->declBit(c+124,0,"state_reg",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBus(c+125,0,"i",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::INTEGER, false,-1, 31,0);
     tracep->popPrefix();
     tracep->popPrefix();
@@ -294,7 +289,7 @@ VL_ATTR_COLD void VTestbench___024root__trace_init_sub__TOP__Conv__0(VTestbench_
     const int c = vlSymsp->__Vm_baseCode;
     // Body
     tracep->declBus(c+194,0,"WIDTH",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBus(c+205,0,"LEN",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBus(c+197,0,"LEN",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
 }
 
 VL_ATTR_COLD void VTestbench___024root__trace_init_top(VTestbench___024root* vlSelf, VerilatedVcd* tracep) {
@@ -370,11 +365,7 @@ VL_ATTR_COLD void VTestbench___024root__trace_const_0_sub_0(VTestbench___024root
     bufp->fullIData(oldp+194,(0x40U),32);
     bufp->fullIData(oldp+195,(6U),32);
     bufp->fullIData(oldp+196,(0x3fU),32);
-    bufp->fullQData(oldp+197,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg[0]),64);
-    bufp->fullQData(oldp+199,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg[1]),64);
-    bufp->fullQData(oldp+201,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg[2]),64);
-    bufp->fullQData(oldp+203,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg[3]),64);
-    bufp->fullIData(oldp+205,(4U),32);
+    bufp->fullIData(oldp+197,(4U),32);
 }
 
 VL_ATTR_COLD void VTestbench___024root__trace_full_0_sub_0(VTestbench___024root* vlSelf, VerilatedVcd::Buffer* bufp);
@@ -554,7 +545,7 @@ VL_ATTR_COLD void VTestbench___024root__trace_full_0_sub_0(VTestbench___024root*
     bufp->fullCData(oldp+121,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__fsm_state_reg),2);
     bufp->fullIData(oldp+122,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j),32);
     bufp->fullIData(oldp+123,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk2__DOT__m),32);
-    bufp->fullCData(oldp+124,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg),2);
+    bufp->fullBit(oldp+124,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg));
     bufp->fullIData(oldp+125,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__i),32);
     bufp->fullWData(oldp+126,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
                               [0U].__PVT__data),128);

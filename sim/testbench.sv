@@ -32,7 +32,9 @@ module Testbench;
             end      
             in_data = {$random(seed), $random(seed)};
             in_valid = 1'b1;
+            if (in_ready) in_valid = 1'b0;
             @(posedge out_valid);
+            in_valid = 1'b0;
         end
         $display("success!!!");
         $finish;

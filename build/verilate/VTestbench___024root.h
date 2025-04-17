@@ -46,7 +46,7 @@ class alignas(VL_CACHE_LINE_BYTES) VTestbench___024root final : public Verilated
     CData/*0:0*/ Testbench__DOT__error;
     CData/*0:0*/ Testbench__DOT__conv_unit__DOT__temp_valid;
     CData/*0:0*/ Testbench__DOT__conv_unit__DOT__temp_ready;
-    CData/*1:0*/ Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg;
+    CData/*0:0*/ Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg;
     CData/*0:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_start;
     CData/*1:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg;
     CData/*1:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg;
@@ -94,7 +94,6 @@ class alignas(VL_CACHE_LINE_BYTES) VTestbench___024root final : public Verilated
     QData/*63:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__multiplicand_reg;
     QData/*63:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__2__KET____DOT__mul__DOT__multiplicand_reg;
     QData/*63:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__multiplicand_reg;
-    VlUnpacked<QData/*63:0*/, 4> Testbench__DOT__conv_unit__DOT__shift__DOT__data_reg;
     VlUnpacked<VlWide<4>/*127:0*/, 5> Testbench__DOT__conv_unit__DOT__conv__DOT__temp_result;
     VlUnpacked<CData/*0:0*/, 5> Testbench__DOT__conv_unit__DOT__conv__DOT__temp_finish;
     VlUnpacked<VlWide<4>/*127:0*/, 4> Testbench__DOT__judge__DOT__mid;

@@ -70,12 +70,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 1U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -99,12 +103,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 2U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -128,12 +136,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 3U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -157,12 +169,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 4U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -186,12 +202,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 5U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -215,12 +235,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 6U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -244,12 +268,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 7U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -273,12 +301,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 8U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -302,12 +334,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 9U;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -331,12 +367,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0xaU;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -360,12 +400,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0xbU;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -389,12 +433,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0xcU;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -418,12 +466,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0xdU;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -447,12 +499,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0xeU;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -476,12 +532,16 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0xfU;
     vlSelfRef.Testbench__DOT__kernel.__PVT__data[0U] 
         = (((QData)((IData)(VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))) 
@@ -505,15 +565,19 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__0(V
                                          | (QData)((IData)(
                                                            VL_RANDOM_SEEDED_II(vlSelfRef.Testbench__DOT__seed))));
     vlSelfRef.Testbench__DOT__in_valid = 1U;
+    if (vlSelfRef.Testbench__DOT__in_ready) {
+        vlSelfRef.Testbench__DOT__in_valid = 0U;
+    }
     co_await vlSelfRef.__VtrigSched_hcbe6592c__0.trigger(0U, 
                                                          nullptr, 
                                                          "@(posedge Testbench.out_valid)", 
                                                          "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                                         35);
+                                                         36);
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
+    vlSelfRef.Testbench__DOT__in_valid = 0U;
     vlSelfRef.Testbench__DOT__i = 0x10U;
     VL_WRITEF_NX("success!!!\n",0);
-    VL_FINISH_MT("/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 38, "");
+    VL_FINISH_MT("/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 40, "");
     vlSelfRef.__Vm_traceActivity[2U] = 1U;
 }
 
@@ -526,7 +590,7 @@ VL_INLINE_OPT VlCoroutine VTestbench___024root___eval_initial__TOP__Vtiming__1(V
         co_await vlSelfRef.__VdlySched.delay(0x1f4ULL, 
                                              nullptr, 
                                              "/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 
-                                             42);
+                                             44);
         vlSelfRef.Testbench__DOT__clk = (1U & (~ (IData)(vlSelfRef.Testbench__DOT__clk)));
     }
 }
@@ -571,7 +635,7 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__0(VTestbench___024ro
     // Body
     if (VL_UNLIKELY((vlSelfRef.Testbench__DOT__error))) {
         VL_WRITEF_NX("fail!!!\n",0);
-        VL_FINISH_MT("/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 86, "");
+        VL_FINISH_MT("/mnt/d/sysI/sys1-sp25/src/lab4-1/sim/testbench.sv", 88, "");
     }
 }
 
@@ -1179,7 +1243,7 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
     VL_ZERO_W(128, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__c);
     VlWide<4>/*127:0*/ __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__d;
     VL_ZERO_W(128, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__d);
-    CData/*1:0*/ __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg;
+    CData/*0:0*/ __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg;
     __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 0;
     CData/*0:0*/ __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid;
     __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0;
@@ -1290,38 +1354,38 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
         } else {
             __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__fsm_state_reg = 0U;
         }
-        if ((0U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg))) {
-            if (vlSelfRef.Testbench__DOT__in_valid) {
-                __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[0U] 
-                    = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
-                    .__PVT__data[1U];
-                vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__i = 3U;
-                __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0U;
-                vlSelfRef.Testbench__DOT__in_ready = 0U;
-                __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
-                __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[1U] 
-                    = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
-                    .__PVT__data[2U];
-                __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[2U] 
-                    = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
-                    .__PVT__data[3U];
-                __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[3U] 
-                    = vlSelfRef.Testbench__DOT__in_data;
-            } else {
-                __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 0U;
-                __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0U;
-            }
-        } else if ((1U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg))) {
-            if (((IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready) 
-                 & (IData)(vlSelfRef.Testbench__DOT__in_valid))) {
-                __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 0U;
-                vlSelfRef.Testbench__DOT__in_ready = 1U;
-                __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 1U;
+        if (vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg) {
+            if (vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg) {
+                if (((IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready) 
+                     & (IData)(vlSelfRef.Testbench__DOT__in_valid))) {
+                    __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 0U;
+                    vlSelfRef.Testbench__DOT__in_ready = 1U;
+                    __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 1U;
+                } else {
+                    __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
+                }
             } else {
                 __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
             }
-        } else {
+        } else if (vlSelfRef.Testbench__DOT__in_valid) {
+            __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[0U] 
+                = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
+                .__PVT__data[1U];
+            vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__i = 3U;
+            __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0U;
+            vlSelfRef.Testbench__DOT__in_ready = 0U;
             __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 1U;
+            __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[1U] 
+                = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
+                .__PVT__data[2U];
+            __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[2U] 
+                = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
+                .__PVT__data[3U];
+            __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data.__PVT__data[3U] 
+                = vlSelfRef.Testbench__DOT__in_data;
+        } else {
+            __Vdly__Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg = 0U;
+            __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid = 0U;
         }
         if ((0U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg))) {
             if (vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_valid) {
