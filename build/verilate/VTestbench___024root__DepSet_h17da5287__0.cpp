@@ -1253,11 +1253,6 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
     }
     CData/*1:0*/ __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg;
     __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg = 0;
-    VlUnpacked<VTestbench_Testbench__DOT__conv_unit__DOT__conv__DOT__mid_vector__struct__0, 4> __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1;
-    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
-        VL_ZERO_W(128, __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[__Vi0].__PVT__data);
-        __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[__Vi0].__PVT__valid = 0;
-    }
     CData/*1:0*/ __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg;
     __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg = 0;
     CData/*1:0*/ __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__fsm_state_reg;
@@ -1269,15 +1264,9 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
     VlWide<4>/*127:0*/ __Vtemp_1;
     VlWide<4>/*127:0*/ __Vtemp_2;
     VlWide<4>/*127:0*/ __Vtemp_3;
-    VlWide<4>/*127:0*/ __Vtemp_4;
-    VlWide<4>/*127:0*/ __Vtemp_5;
-    VlWide<4>/*127:0*/ __Vtemp_6;
-    VlWide<4>/*127:0*/ __Vtemp_7;
     // Body
     __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg 
         = vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg;
-    __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1 
-        = vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1;
     __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg 
         = vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg;
     __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__fsm_state_reg 
@@ -1293,7 +1282,6 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
     __Vdly__Testbench__DOT__conv_unit__DOT__shifted_data 
         = vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data;
     if (vlSelfRef.Testbench__DOT__rst) {
-        vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j = 3U;
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg = 0U;
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__fsm_state_reg = 0U;
         __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__2__KET____DOT__mul__DOT__fsm_state_reg = 0U;
@@ -1305,10 +1293,7 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
         vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready = 1U;
         vlSelfRef.Testbench__DOT__out_valid = 0U;
         vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_start = 0U;
-        __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[0U].__PVT__valid = 0U;
         vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2.__PVT__valid = 0U;
-        __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[1U].__PVT__valid = 0U;
-        __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[2U].__PVT__valid = 0U;
     } else {
         if ((0U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg))) {
             __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg 
@@ -1389,50 +1374,21 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
         }
         if ((0U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg))) {
             if (vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_valid) {
-                vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk2__DOT__m = 4U;
                 vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_start = 1U;
                 vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready = 0U;
                 vlSelfRef.Testbench__DOT__out_valid = 0U;
-                __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[0U].__PVT__valid = 0U;
                 __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg = 1U;
-                __Vtemp_1[0U] = 0U;
-                __Vtemp_1[1U] = 0U;
-                __Vtemp_1[2U] = 0U;
-                __Vtemp_1[3U] = 0U;
-                VL_ASSIGN_W(128,__Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                            [0U].__PVT__data, __Vtemp_1);
-                __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[1U].__PVT__valid = 0U;
-                __Vtemp_2[0U] = 0U;
-                __Vtemp_2[1U] = 0U;
-                __Vtemp_2[2U] = 0U;
-                __Vtemp_2[3U] = 0U;
-                VL_ASSIGN_W(128,__Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                            [1U].__PVT__data, __Vtemp_2);
-                __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[2U].__PVT__valid = 0U;
-                __Vtemp_3[0U] = 0U;
-                __Vtemp_3[1U] = 0U;
-                __Vtemp_3[2U] = 0U;
-                __Vtemp_3[3U] = 0U;
-                VL_ASSIGN_W(128,__Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                            [2U].__PVT__data, __Vtemp_3);
-                __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1[3U].__PVT__valid = 0U;
-                __Vtemp_4[0U] = 0U;
-                __Vtemp_4[1U] = 0U;
-                __Vtemp_4[2U] = 0U;
-                __Vtemp_4[3U] = 0U;
-                VL_ASSIGN_W(128,__Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                            [3U].__PVT__data, __Vtemp_4);
             } else {
                 vlSelfRef.Testbench__DOT__conv_unit__DOT__temp_ready = 1U;
                 vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_start = 0U;
                 vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2.__PVT__valid = 0U;
                 __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg = 0U;
-                __Vtemp_5[0U] = 0U;
-                __Vtemp_5[1U] = 0U;
-                __Vtemp_5[2U] = 0U;
-                __Vtemp_5[3U] = 0U;
+                __Vtemp_1[0U] = 0U;
+                __Vtemp_1[1U] = 0U;
+                __Vtemp_1[2U] = 0U;
+                __Vtemp_1[3U] = 0U;
                 VL_ASSIGN_W(128,vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2
-                            .__PVT__data, __Vtemp_5);
+                            .__PVT__data, __Vtemp_1);
             }
         } else if ((1U == (IData)(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg))) {
             if (vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
@@ -1454,9 +1410,9 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
                 VL_ASSIGN_W(128,__Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__a, 
                             vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
                             [0U].__PVT__data);
-                VL_ADD_W(4, __Vtemp_6, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__a, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__b);
-                VL_ADD_W(4, __Vtemp_7, __Vtemp_6, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__c);
-                VL_ADD_W(4, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__Vfuncout, __Vtemp_7, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__d);
+                VL_ADD_W(4, __Vtemp_2, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__a, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__b);
+                VL_ADD_W(4, __Vtemp_3, __Vtemp_2, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__c);
+                VL_ADD_W(4, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__Vfuncout, __Vtemp_3, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__d);
                 VL_ASSIGN_W(128,vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2
                             .__PVT__data, __Vfunc_Testbench__DOT__conv_unit__DOT__conv__DOT__add128__0__Vfuncout);
             } else {
@@ -1490,8 +1446,6 @@ VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__2(VTestbench___024ro
         = __Vdly__Testbench__DOT__conv_unit__DOT__temp_valid;
     vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg 
         = __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg;
-    vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1 
-        = __Vdly__Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1;
 }
 
 VL_INLINE_OPT void VTestbench___024root___nba_sequent__TOP__3(VTestbench___024root* vlSelf) {

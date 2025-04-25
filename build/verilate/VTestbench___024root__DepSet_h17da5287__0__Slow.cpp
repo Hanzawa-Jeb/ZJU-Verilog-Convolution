@@ -330,20 +330,6 @@ VL_ATTR_COLD void VTestbench___024root___ctor_var_reset(VTestbench___024root* vl
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2.__PVT__valid = VL_RAND_RESET_I(1);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_start = VL_RAND_RESET_I(1);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg = VL_RAND_RESET_I(2);
-    for (int __Vi1 = 0; __Vi1 < 4; ++__Vi1) {
-        vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__temp_ker.__PVT__data[__Vi1] = VL_RAND_RESET_Q(64);
-    }
-    for (int __Vi1 = 0; __Vi1 < 4; ++__Vi1) {
-        vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__temp_dat.__PVT__data[__Vi1] = VL_RAND_RESET_Q(64);
-    }
-    for (int __Vi0 = 0; __Vi0 < 5; ++__Vi0) {
-        VL_RAND_RESET_W(128, vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__temp_result[__Vi0]);
-    }
-    for (int __Vi0 = 0; __Vi0 < 5; ++__Vi0) {
-        vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__temp_finish[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j = VL_RAND_RESET_I(32);
-    vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk2__DOT__m = VL_RAND_RESET_I(32);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__multiplicand_reg = VL_RAND_RESET_Q(64);
     VL_RAND_RESET_W(128, vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__product_reg);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg = VL_RAND_RESET_I(2);

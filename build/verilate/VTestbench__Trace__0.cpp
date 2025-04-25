@@ -193,38 +193,32 @@ void VTestbench___024root__trace_chg_0_sub_0(VTestbench___024root* vlSelf, Veril
         bufp->chgQData(oldp+118,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shifted_data
                                  .__PVT__data[3U]),64);
         bufp->chgCData(oldp+120,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__fsm_state_reg),2);
-        bufp->chgIData(oldp+121,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j),32);
-        bufp->chgIData(oldp+122,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk2__DOT__m),32);
-        bufp->chgBit(oldp+123,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg));
-        bufp->chgIData(oldp+124,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__i),32);
-    }
-    if (VL_UNLIKELY(((vlSelfRef.__Vm_traceActivity[4U] 
-                      | vlSelfRef.__Vm_traceActivity
-                      [5U])))) {
-        bufp->chgWData(oldp+125,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                                 [0U].__PVT__data),128);
-        bufp->chgBit(oldp+129,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                               [0U].__PVT__valid));
-        bufp->chgWData(oldp+130,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                                 [1U].__PVT__data),128);
-        bufp->chgBit(oldp+134,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                               [1U].__PVT__valid));
-        bufp->chgWData(oldp+135,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                                 [2U].__PVT__data),128);
-        bufp->chgBit(oldp+139,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                               [2U].__PVT__valid));
-        bufp->chgWData(oldp+140,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                                 [3U].__PVT__data),128);
-        bufp->chgBit(oldp+144,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
-                               [3U].__PVT__valid));
+        bufp->chgBit(oldp+121,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__state_reg));
+        bufp->chgIData(oldp+122,(vlSelfRef.Testbench__DOT__conv_unit__DOT__shift__DOT__i),32);
     }
     if (VL_UNLIKELY((vlSelfRef.__Vm_traceActivity[5U]))) {
-        bufp->chgCData(oldp+145,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__work_cnt),6);
-        bufp->chgCData(oldp+146,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__work_cnt),6);
-        bufp->chgCData(oldp+147,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__2__KET____DOT__mul__DOT__work_cnt),6);
-        bufp->chgCData(oldp+148,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__work_cnt),6);
+        bufp->chgWData(oldp+123,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                                 [0U].__PVT__data),128);
+        bufp->chgBit(oldp+127,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                               [0U].__PVT__valid));
+        bufp->chgWData(oldp+128,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                                 [1U].__PVT__data),128);
+        bufp->chgBit(oldp+132,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                               [1U].__PVT__valid));
+        bufp->chgWData(oldp+133,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                                 [2U].__PVT__data),128);
+        bufp->chgBit(oldp+137,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                               [2U].__PVT__valid));
+        bufp->chgWData(oldp+138,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                                 [3U].__PVT__data),128);
+        bufp->chgBit(oldp+142,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage1
+                               [3U].__PVT__valid));
+        bufp->chgCData(oldp+143,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__work_cnt),6);
+        bufp->chgCData(oldp+144,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__work_cnt),6);
+        bufp->chgCData(oldp+145,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__2__KET____DOT__mul__DOT__work_cnt),6);
+        bufp->chgCData(oldp+146,(vlSelfRef.Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__3__KET____DOT__mul__DOT__work_cnt),6);
     }
-    bufp->chgBit(oldp+149,(vlSelfRef.Testbench__DOT__clk));
+    bufp->chgBit(oldp+147,(vlSelfRef.Testbench__DOT__clk));
 }
 
 void VTestbench___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {

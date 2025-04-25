@@ -56,9 +56,6 @@ module ConvOperator(
             in_ready <= 1'b1;
             out_valid <= 1'b0;
             mul_start <= 1'b0;
-            for (integer j=0;j<Conv::LEN-1;j++) begin
-                vector_stage1[j].valid <= 1'b0;
-            end
             vector_stage2.valid <= 1'b0;
         end else begin
             case(state_reg) 
@@ -67,10 +64,6 @@ module ConvOperator(
                         mul_start <= 1'b1;
                         in_ready <= 1'b0;
                         out_valid <= 1'b0;
-                        for(integer m=0;m<Conv::LEN;m++)begin
-                            vector_stage1[m].valid <= 1'b0;
-                            vector_stage1[m].data <= 128'b0;
-                        end
                         state_reg <= WORK;
                     end else begin
                         in_ready <= 1'b1;
