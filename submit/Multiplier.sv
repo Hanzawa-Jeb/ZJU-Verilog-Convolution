@@ -1,4 +1,3 @@
-`include"conv_struct.vh"
 module Multiplier #(
     parameter LEN = 32
 ) (
@@ -44,11 +43,6 @@ module Multiplier #(
                 WORK:
                 if(work_cnt == 0) fsm_state_reg <= FINAL;
                 FINAL:
-                /*if(mul_start) begin
-                    fsm_state_reg <= IDLE;
-                end else begin
-
-                end*/
                 fsm_state_reg <= IDLE;
                 default:
                 fsm_state_reg <= IDLE;

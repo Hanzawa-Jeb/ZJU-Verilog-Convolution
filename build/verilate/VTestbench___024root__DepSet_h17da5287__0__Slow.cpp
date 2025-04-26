@@ -330,6 +330,7 @@ VL_ATTR_COLD void VTestbench___024root___ctor_var_reset(VTestbench___024root* vl
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__vector_stage2.__PVT__valid = VL_RAND_RESET_I(1);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_start = VL_RAND_RESET_I(1);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__state_reg = VL_RAND_RESET_I(2);
+    vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j = VL_RAND_RESET_I(32);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__multiplicand_reg = VL_RAND_RESET_Q(64);
     VL_RAND_RESET_W(128, vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__product_reg);
     vlSelf->Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__fsm_state_reg = VL_RAND_RESET_I(2);

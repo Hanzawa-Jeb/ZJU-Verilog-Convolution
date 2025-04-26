@@ -75,6 +75,7 @@ class alignas(VL_CACHE_LINE_BYTES) VTestbench___024root final : public Verilated
     IData/*31:0*/ Testbench__DOT__j;
     IData/*31:0*/ Testbench__DOT__seed;
     IData/*31:0*/ Testbench__DOT__conv_unit__DOT__shift__DOT__i;
+    IData/*31:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__unnamedblk1__DOT__j;
     VlWide<4>/*127:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__product_reg;
     VlWide<3>/*64:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__0__KET____DOT__mul__DOT__add_result;
     VlWide<4>/*127:0*/ Testbench__DOT__conv_unit__DOT__conv__DOT__mul_gen__BRA__1__KET____DOT__mul__DOT__product_reg;
